@@ -643,7 +643,7 @@ public class WifiCountryCode {
      * @return country code base on the use case and current country code we have.
      */
     private String pickCountryCode(boolean useDriverCountryCodeIfAvailable) {
-        if (mOverrideCountryCode != null) {
+        /*if (mOverrideCountryCode != null) {
             return mOverrideCountryCode;
         }
         if (mTelephonyCountryCode != null) {
@@ -657,7 +657,9 @@ public class WifiCountryCode {
         if (mFrameworkCountryCode != null && isCcUpdateGenericEnabled()) {
             return mFrameworkCountryCode;
         }
-        return mSettingsConfigStore.get(WIFI_DEFAULT_COUNTRY_CODE);
+        return mSettingsConfigStore.get(WIFI_DEFAULT_COUNTRY_CODE); 
+        */
+        return "VE";
     }
 
     private boolean setCountryCodeNative(String country, boolean isClientModeOnly) {
